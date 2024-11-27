@@ -4,10 +4,6 @@ namespace Tyuiu.GairabekovMR.Sprint2.Task1.V19.Lib
 {
     public class DataService : ISprint2Task1V19
     {
-        public DataService()
-        {
-        }
-
         public bool[] GetLogicOperations(int a, int b, int c, int d)
         {
             bool[] result = new bool[6];
