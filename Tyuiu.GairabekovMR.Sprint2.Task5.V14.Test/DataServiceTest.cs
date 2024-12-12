@@ -1,6 +1,4 @@
 ﻿using Tyuiu.GairabekovMR.Sprint2.Task5.V14.Lib;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace Tyuiu.GairabekovMR.Sprint2.Task5.V14.Test
 {
     [TestClass]
@@ -9,8 +7,12 @@ namespace Tyuiu.GairabekovMR.Sprint2.Task5.V14.Test
         [TestMethod]
         public void TestMethod1()
         {
-            var dataService = new DataService();
-            Assert.AreEqual("Пятница", dataService.FindDayName(20, 7));
+            DataService ds = new DataService();
+            int k = 10;
+            int d = 5;
+            string res = ds.FindDayName(k, d);
+            string wait = "�����������";
+            Assert.AreEqual(wait, res);
         }
     }
 }
